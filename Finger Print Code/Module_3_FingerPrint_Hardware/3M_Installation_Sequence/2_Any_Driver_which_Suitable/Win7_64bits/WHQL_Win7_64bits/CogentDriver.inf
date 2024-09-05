@@ -1,0 +1,334 @@
+;
+; CogentDriver.INF  -- This file contains installation information for CogentDriver,
+;
+
+[Version]
+signature="$CHICAGO$"
+Class       = Image
+ClassGUID   = {6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider=%Msft%
+DriverVer=08/10/2012,1.12.220.1           
+CatalogFile=COGTscanner.cat
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+
+[Manufacturer]
+%MsftMfg%=Further,NTamd64
+
+
+[DestinationDirs]
+CogentDriver.CopyDrivers=10,system32\drivers
+DefaultDestDirs=10,system32\drivers
+
+[SourceDisksNames]
+1="Install disk",disk1
+
+[SourceDisksFiles]
+CogentDriver.sys=1
+
+[Further.NTamd64]
+%CSD200.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2140
+
+%CSD100.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2141
+%CSD200i.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2148
+%CSD200x.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2149
+
+%CSD200N.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2142
+
+%CSD100N.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2143
+
+%CSD330.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2120
+
+%CSD330N.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2121
+
+%CS500I.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2130
+
+%CS500IN.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2131
+
+%CS500E.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2150
+
+%CS500EN.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2153
+
+%CS500ps.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2151
+
+%CS500t.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2152
+
+%CS1000p2p.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2158
+
+%CSD450.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2160
+
+%CSD450k.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2161
+
+%CSD450F.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2162
+
+%CS500P.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2170
+
+%CS500PN.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2171
+
+%CS1000p.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2172
+
+%CS1000e.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2173
+
+%Device.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2174
+
+%CS1000ps.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2175
+
+%CS1000es.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2176
+
+%CS500psX.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2177
+
+%CS1000psX.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2178
+
+%CS1000esX.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2179
+
+%CS1000pX.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_217A
+
+%CS801.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2110
+
+%CS801N.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2146
+
+%CS801B.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2111
+
+%CS801BN.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2147
+
+%Camera.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2112
+
+%Iris.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2115
+
+%CIS101.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2201
+
+%CIS202.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2113
+
+%CIS430.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2116
+
+%CIS475.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2117
+
+%Scanner.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2118
+
+%CIS4100.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2119
+
+%CIS4150.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_211A
+
+%CIS202s.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_211B
+
+%CIS430s.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_211C
+
+%CSINT.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_211D
+
+%CSIU.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_211E
+
+%CSD301L.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2100
+
+%CSD301LN.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2145
+
+%CFS320c.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2101
+
+%CSD301B.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2102
+
+%CSD301BN.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2144
+
+%CFS420c.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2103
+
+%CFS520c.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2104
+
+%CFS320e.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2105
+
+%CFS420e.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2106
+
+%CFS520e.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2107
+
+%CFS320x.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2108
+
+%CFS420x.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_2109
+
+%CFS520x.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_210A
+
+%CFS100.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_210B
+
+%Passport600.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_210C
+
+%Passport900.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_210D
+
+%CarLicense2000.DeviceDesc%=CogentDriver.Device,USB\VID_1E25&PID_210E
+
+%CarLicense3000.DeviceDesc%=CogentDriver.Device,USB\VID_0547&PID_210F
+
+;The below is just for preproduct.
+
+%CS801old.DeviceDesc%=CogentDriver.Device,USB\VID_0547&PID_2110
+
+%CSD200old.DeviceDesc%=CogentDriver.Device,USB\VID_0547&PID_2140
+
+%CSD330old.DeviceDesc%=CogentDriver.Device,USB\VID_0547&PID_2120
+
+%CSD450old.DeviceDesc%=CogentDriver.Device,USB\VID_0547&PID_2160
+
+%CSD301Bold.DeviceDesc%=CogentDriver.Device,USB\VID_0547&PID_2102
+
+%CSD301Lold.DeviceDesc%=CogentDriver.Device,USB\VID_0547&PID_2100
+
+%CS500Iold.DeviceDesc%=CogentDriver.Device,USB\VID_0547&PID_2130
+
+%CS500Eold.DeviceDesc%=CogentDriver.Device,USB\VID_0547&PID_2150
+
+[CogentDriver.Device]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration
+AddReg=     CogentDriver.AddReg
+CopyFiles=  CogentDriver.CopyDrivers
+KnownFiles= CogentDriver.KnownFiles
+
+[CogentDriver.Device.NT]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+AddReg=     CogentDriver.AddReg
+CopyFiles=  CogentDriver.CopyDrivers
+
+[CogentDriver.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,CogentDriver.sys
+
+[CogentDriver.CopyDrivers]
+CogentDriver.sys
+
+[CogentDriver.KnownFiles]
+CogentDriver.sys=safe
+
+[CogentDriver.Device.Interfaces]
+AddInterface={65e8773d-8f56-11d0-a3b9-00a0c9223196},"GLOBAL",VideoCapture,
+AddInterface={6994AD05-93EF-11D0-A3CC-00A0C9223196},"GLOBAL",VideoCapture,
+
+
+[CogentDriver.Device.NT.Interfaces]
+AddInterface={65e8773d-8f56-11d0-a3b9-00a0c9223196},"GLOBAL",VideoCapture,
+AddInterface={6994AD05-93EF-11D0-A3CC-00A0C9223196},"GLOBAL",VideoCapture,
+
+
+[VideoCapture]
+AddReg=VideoCapture.AddReg
+
+[VideoCapture.AddReg]
+HKR,,CLSID,,{17CCA71B-ECD7-11D0-B908-00A0C9223196}
+HKR,,FriendlyName,,%CogentDriver.Capture%
+; IAMVideoCompression installed as static interface on both output pins
+HKR,PinFactory\0\Interfaces\{C6E13343-30AC-11d0-A18C-00A0C9118956},,,{C6E13343-30AC-11d0-A18C-00A0C9118956}
+HKR,PinFactory\1\Interfaces\{C6E13343-30AC-11d0-A18C-00A0C9118956},,,{C6E13343-30AC-11d0-A18C-00A0C9118956}
+
+[CogentDriver.Device.NT.Services]
+AddService = CogentDriver,0x00000002,CogentDriver.ServiceInstall
+
+[CogentDriver.ServiceInstall]
+;DisplayName   = %CogentDriver.DeviceDesc%
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_AUTO_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\CogentDriver.sys
+
+;---------------------------------------------------------------
+;                S t r i n g s
+;---------------------------------------------------------------
+
+[Strings]
+
+;----------------
+; Non-Localizable
+;----------------
+
+SERVICE_KERNEL_DRIVER=1
+SERVICE_AUTO_START=2
+SERVICE_ERROR_NORMAL=1
+
+
+;----------------
+; Localizable
+;----------------
+
+Msft=            "Cogent Systems Inc."
+MsftMfg=         "Cogent Systems Inc."
+CSD100.DeviceDesc=    "Cogent CSD100"
+CSD100N.DeviceDesc=    "Cogent CSD100"
+CSD200.DeviceDesc=   "Cogent CSD200"
+CSD200N.DeviceDesc = "Cogent CSD200"
+CSD200i.DeviceDesc=   "Cogent CSD200i"
+CSD200x.DeviceDesc = "Cogent CSD200x"
+
+CSD301B.DeviceDesc=   "Cogent CSD301B"
+CSD301BN.DeviceDesc=   "Cogent CSD301B"
+CSD301L.DeviceDesc=   "Cogent CSD301L"
+CSD301LN.DeviceDesc=   "Cogent CSD301L"
+CSD330.DeviceDesc=   "Cogent CSD330"
+CSD330N.DeviceDesc=   "Cogent CSD330"
+CSD450.DeviceDesc=   "Cogent CSD450"
+CSD450F.DeviceDesc=   "Cogent CSD450F"
+CSD450k.DeviceDesc=   "Cogent CSD450k"
+CS500I.DeviceDesc=   "Cogent CS500i"
+CS500IN.DeviceDesc=   "Cogent CS500i"
+CS500E.DeviceDesc=   "Cogent CS500e"
+CS500EN.DeviceDesc=   "Cogent CS500e"
+CS500P.DeviceDesc=   "Cogent CS500p"
+CS500PN.DeviceDesc=   "Cogent CS500p"
+CS801.DeviceDesc =   "Cogent CS801"
+CS801N.DeviceDesc =   "Cogent CS801"
+CS801B.DeviceDesc =   "Cogent CS801B"
+CS801BN.DeviceDesc =   "Cogent CS801B"
+Camera.DeviceDesc = "Cogent Camera"
+Iris.DeviceDesc = "Cogent Iris"
+Scanner.DeviceDesc = "Cogent Scanner"
+Device.DeviceDesc = "Cogent Device"
+
+CS801old.DeviceDesc =   "Cogent CS801"
+CSD301Bold.DeviceDesc=   "Cogent CSD301B"
+CSD301Lold.DeviceDesc=   "Cogent CSD301L"
+CSD200old.DeviceDesc=   "Cogent CSD200"
+CSD330old.DeviceDesc=   "Cogent CSD330"
+CSD450old.DeviceDesc=   "Cogent CSD450"
+CS500Iold.DeviceDesc=   "Cogent CS500i"
+CS500Eold.DeviceDesc=   "Cogent CS500e"
+CogentDriver.Capture = "Cogent Device"
+
+CS500ps.DeviceDesc = "Cogent CS500ps"
+CS500t.DeviceDesc = "Cogent CS500t"
+CS500psX.DeviceDesc = "Cogent CS500psX"
+CS1000p.DeviceDesc = "Cogent CS1000p"
+CS1000e.DeviceDesc = "Cogent CS1000e"
+CS1000p2p.DeviceDesc = "Cogent CS1000p (TP)"
+CS1000ps.DeviceDesc = "Cogent CS1000ps"
+CS1000es.DeviceDesc = "Cogent CS1000es"
+CS1000psX.DeviceDesc = "Cogent CS1000psX"
+CS1000esX.DeviceDesc = "Cogent CS1000esX"
+CS1000pX.DeviceDesc = "Cogent CS1000pX"
+
+CIS101.DeviceDesc = "Cogent CIS101"
+CIS202.DeviceDesc = "Cogent CIS-202"
+CIS430.DeviceDesc = "Cogent CIS-430"
+CIS475.DeviceDesc = "Cogent CIS-475"
+CIS4100.DeviceDesc = "Cogent CIS-4100"
+CIS4150.DeviceDesc = "Cogent CIS-4150"
+CIS202s.DeviceDesc = "Cogent CIS-202s"
+CIS430s.DeviceDesc = "Cogent CIS-430s"
+CSINT.DeviceDesc = "Cogent CSI-NT"
+CSIU.DeviceDesc = "Cogent CSI-U"
+
+CFS320c.DeviceDesc = "Cogent CFS-320c"
+CFS420c.DeviceDesc = "Cogent CFS-420c"
+CFS520c.DeviceDesc = "Cogent CFS-520c"
+CFS320e.DeviceDesc = "Cogent CFS-320e"
+CFS420e.DeviceDesc = "Cogent CFS-420e"
+CFS520e.DeviceDesc = "Cogent CFS-520e"
+CFS320x.DeviceDesc = "Cogent CFS-320x"
+CFS420x.DeviceDesc = "Cogent CFS-420x"
+CFS520x.DeviceDesc = "Cogent CFS-520x"
+CFS100.DeviceDesc = "Cogent CSC-100"
+
+Passport600.DeviceDesc = "Cogent CPS-600"
+Passport900.DeviceDesc = "Cogent CPS-900"
+
+CarLicense2000.DeviceDesc = "Cogent CLPS-2000"
+CarLicense3000.DeviceDesc = "Cogent CLPS-3000"
+
+
+
+
+               
